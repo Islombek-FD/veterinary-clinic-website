@@ -1,0 +1,27 @@
+// Services Hero Section Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.services-hero {
+	height: 395px;
+
+	&__content {
+		max-width: 1263px;
+		margin-left: auto;
+		margin-right: 0;
+		padding-top: 110px;
+		padding-bottom: 140px;
+		background-image: url('../../Assets/Images/services_hero_parrot.png');
+		background-repeat: no-repeat;
+		background-size: 435px 385px;
+		background-position: right top;
+	}
+
+	&__heading {
+		margin-bottom: 21px;
+	}
+
+	&__description {
+		max-width: 447px;
+	}
+}

@@ -1,0 +1,20 @@
+// Blog Hero Section Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.blog-hero {
+	&__content {
+		height: 390px;
+		max-width: 1263px;
+		margin-left: auto;
+		padding-top: 110px;
+		background-image: url('../../Assets/Images/blog_hero_cat.png');
+		background-repeat: no-repeat;
+		background-size: 415px 317px;
+		background-position: 653px 30px;
+	}
+
+	&__heading {
+		margin-bottom: 21px;
+	}
+}

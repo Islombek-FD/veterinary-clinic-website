@@ -1,0 +1,59 @@
+// Sending Email Section Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.email {
+	background-image: url('../../Assets/Images/sending_email.png');
+	background-repeat: no-repeat;
+	background-size: 100% 308px;
+	background-position: 0 50%;
+
+	& .container-sm {
+		position: relative;
+		height: 481px;
+		padding-top: 108px;
+		padding-bottom: 65px;
+		background-image: url('../../Assets/Images/sending_email-dog.png');
+		background-repeat: no-repeat;
+		background-position: 668px -20px;
+	}
+
+	&__content {
+		position: absolute;
+		top: 50%;
+		left: 200px;
+		transform: translateY(-50%);
+	}
+
+	&__heading {
+		margin-bottom: 32px;
+		color: #fff;
+	}
+
+	&__form {
+		display: flex;
+		column-gap: 21px;
+	}
+
+	&__form-input {
+		width: 335px;
+		padding: 18px 22px 12px;
+		@include fontAll(normal, 16px, 20px);
+		border: 3px solid #fff;
+		border-radius: 5px;
+		color: $dark-color;
+
+		&:hover {
+			border-color: $warning-color;
+		}
+
+		&:focus {
+			outline: none;
+			border-color: $warning-color;
+		}
+	}
+
+	& .main__btn {
+		width: 188px;
+	}
+}

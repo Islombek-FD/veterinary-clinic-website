@@ -1,0 +1,24 @@
+// Button Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.button {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+	height: 21px;
+	@include fontAll(500, 16px, 21px);
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	@include transition;
+
+	&:hover {
+		color: $warning-color;
+	}
+
+	&:active {
+		color: $warning-color;
+		opacity: 0.6;
+	}
+}

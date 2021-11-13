@@ -1,0 +1,57 @@
+// Blog Info Section Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.blog-info {
+	padding-bottom: 126px;
+
+	&__content {
+		display: flex;
+		background-color: #fff;
+		border-radius: 5px;
+	}
+
+	&__text {
+		padding: 68px 110px 67px 82px;
+	}
+
+	&__text-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 39px;
+	}
+
+	&__text-list {
+		display: flex;
+		column-gap: 7px;
+		@include resetList;
+	}
+
+	&__text-link {
+		@include fontAll(normal, 16px, 22px);
+		text-decoration: none;
+		color: #3d9cea;
+		@include transition;
+
+		&:hover {
+			color: $warning-color;
+		}
+	}
+
+	&__text-heading {
+		max-width: 325px;
+		margin-top: 0;
+		margin-bottom: 20px;
+		@include fontAll(bold, 30px, 39px);
+		color: $dark-color;
+	}
+
+	&__text-description {
+		max-width: 517px;
+		margin-top: 0;
+		margin-bottom: 48px;
+		@include fontAll(normal, 16px, 20px);
+		color: $muted-color;
+	}
+}

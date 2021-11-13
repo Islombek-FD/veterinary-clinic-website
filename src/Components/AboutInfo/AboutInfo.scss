@@ -1,0 +1,41 @@
+// About Info Section Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.about-info {
+	color: $muted-color;
+
+	&__house {
+		display: flex;
+		background-color: #fff;
+	}
+
+	&__house-content {
+		padding: 127px 66px 20px 112px;
+	}
+
+	&__house-text {
+		@include fontAll(500, 20px, 26px);
+	}
+
+	&__house-text--warning {
+		color: $warning-color;
+	}
+
+	&__dog {
+		display: flex;
+		max-width: 1263px;
+		margin-left: auto;
+		margin-right: 0;
+	}
+
+	&__dog-content {
+		padding-top: 128px;
+	}
+
+	&__dog-text {
+		width: 494px;
+		margin-bottom: 19px;
+		@include fontAll(normal, 16px, 20px);
+	}
+}

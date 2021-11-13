@@ -1,0 +1,68 @@
+// Footer Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.footer {
+	padding-top: 62px;
+	padding-bottom: 23px;
+	background-color: #f3f3f3;
+
+	&__content {
+		display: flex;
+		column-gap: 127px;
+	}
+
+	& .header__bottom-content {
+		display: flex;
+		column-gap: 67px;
+	}
+
+	& .header__bottom-nav {
+		display: flex;
+		column-gap: 87px;
+	}
+
+	& .header__bottom-list {
+		flex-direction: column;
+		flex-wrap: wrap;
+		row-gap: 14px;
+	}
+
+	& .header__bottom-item {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+	& .header__bottom-link.active,
+	& .header__bottom-link:hover,
+	& .header__bottom-link:active {
+		border-color: transparent;
+	}
+
+	& .header__top-list {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	& .header__top-item {
+		align-items: flex-start;
+	}
+
+	& .header__top-contacts {
+		flex-direction: column;
+	}
+
+	& .header__top-times {
+		flex-direction: column;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	&__info-text {
+		@include fontAll(normal, 14px, 18px);
+	}
+}

@@ -1,0 +1,105 @@
+// Faq Hero Section Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.faq-hero {
+	&__content {
+		max-width: 1263px;
+		margin-left: auto;
+		padding-top: 110px;
+		padding-bottom: 63px;
+		background-image: url('../../Assets/Images/faq_hero_cat.png'),
+			url('../../Assets/Images/faq_hero_parrot.png');
+		background-repeat: no-repeat;
+		background-size: 569px 466px, 654px 640px;
+		background-position: right 52px, 660px bottom;
+	}
+
+	&__description {
+		margin-bottom: 35px;
+	}
+
+	& .main__btn {
+		max-width: 201px;
+		margin-bottom: 62px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 18px;
+		@include resetList;
+	}
+
+	&__item {
+		position: relative;
+		max-width: 752px;
+		padding: 23px 41px 40px;
+		background-color: #fff;
+		border-radius: 5px;
+		border: 1px solid #f3f3f3;
+		@include transition;
+
+		&:first-child {
+			max-width: 660px;
+			margin-bottom: 52px;
+		}
+
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+
+	&__item-header {
+		display: flex;
+		align-items: center;
+	}
+
+	& .pet-icon {
+		transform: rotate(145deg);
+	}
+
+	&__item-title {
+		@include fontAll(500, 12px, 22px);
+		letter-spacing: 8%;
+		text-transform: uppercase;
+		color: $primary-color;
+	}
+
+	&__item-date {
+		display: inline-block;
+		margin-left: 3px;
+		margin-right: 33px;
+		color: $dark-color;
+	}
+
+	&__item-heading {
+		max-width: 540px;
+		margin-top: 7px;
+		margin-bottom: 0;
+		@include fontAll(500, 20px, 22px);
+		color: $dark-color;
+	}
+
+	&__item .clock-icon {
+		position: absolute;
+		top: 60px;
+		right: 40px;
+		display: none;
+	}
+
+	&__item .arrow-icon {
+		position: absolute;
+		top: 60px;
+		right: 43px;
+		transform: rotate(-90deg);
+	}
+
+	&__item:hover .arrow-icon {
+		display: none;
+	}
+
+	&__item:hover .clock-icon {
+		display: block;
+	}
+}

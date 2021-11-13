@@ -1,0 +1,52 @@
+// About Galeria Section Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.about-galeria {
+	padding-bottom: 145px;
+
+	&__content {
+		display: flex;
+		align-items: center;
+		column-gap: 30px;
+		max-width: 1263px;
+		margin-left: auto;
+		margin-right: 0;
+		overflow: hidden;
+	}
+
+	&__heading {
+		width: 430px;
+		margin-bottom: 24px;
+
+		&-warning {
+			color: $warning-color;
+		}
+	}
+
+	&__description {
+		width: 343px;
+		margin-bottom: 80px;
+	}
+
+	&__slider {
+		width: 931px;
+		flex-shrink: 1;
+		@include resetList;
+	}
+
+	&__slider-img {
+		object-fit: cover;
+	}
+
+	&__slider-controlles {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+	}
+
+	&__index {
+		@include fontAll(700, 18px, 20px);
+		color: $primary-color;
+	}
+}

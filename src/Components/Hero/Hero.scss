@@ -1,0 +1,81 @@
+// Hero Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.hero {
+	padding-bottom: 191px;
+
+	&__content {
+		height: 785px;
+		padding-top: 145px;
+		background-image: url('../../Assets/Images/home__hero.png');
+		background-repeat: no-repeat;
+		background-size: 1440px 100%;
+		background-position: center -50px;
+	}
+
+	&__info {
+		max-width: 610px;
+		margin-left: auto;
+	}
+
+	&__heading-secondary {
+		color: $primary-color;
+	}
+
+	& .main__btn {
+		width: 181px;
+		margin-bottom: 290px;
+	}
+
+	&__text {
+		position: relative;
+		max-width: 1134px;
+		margin: 0 auto;
+		padding: 21px 190px;
+		text-align: center;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 20px;
+			left: 100px;
+			width: 60px;
+			height: 50px;
+			background-image: url('../../Assets/Images/quotation_marks2.png');
+			background-repeat: no-repeat;
+			background-size: 60px 50px;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 100px;
+			right: 100px;
+			width: 60px;
+			height: 50px;
+			background-image: url('../../Assets/Images/quotation_marks1.png');
+			background-repeat: no-repeat;
+			background-size: 60px 50px;
+		}
+	}
+
+	&__text-line {
+		display: block;
+		width: 140px;
+		height: 1px;
+		margin: 0 auto 35px;
+		background-color: $muted-color;
+	}
+
+	&__clinic-info {
+		margin-top: 43px;
+		margin-bottom: 35px;
+		@include fontAll(normal, 20px, 26px);
+		color: $muted-color;
+	}
+
+	&__clinic-name {
+		@include fontAll(500, 20px, 26px);
+	}
+}

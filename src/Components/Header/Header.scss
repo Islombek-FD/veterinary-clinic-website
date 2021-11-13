@@ -1,0 +1,140 @@
+// Header Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.header {
+	// Header Top Styles
+
+	&__top {
+		padding-top: 11px;
+		padding-bottom: 10px;
+		background-color: #f9f8f8;
+	}
+
+	&__top-right {
+		max-width: 1120px;
+		margin-left: auto;
+	}
+
+	&__top-list {
+		display: flex;
+		justify-content: space-between;
+		@include resetList;
+	}
+
+	&__top-item {
+		display: flex;
+		align-items: center;
+		column-gap: 7px;
+	}
+
+	&__top-address {
+		@include fontAll(500, 14px, 20px);
+		color: $dark-color;
+		text-decoration: none;
+	}
+
+	&__top-contacts {
+		display: flex;
+		column-gap: 22px;
+		@include resetList;
+	}
+
+	&__top-contact--link {
+		@include fontAll(500, 14px, 20px);
+		color: $dark-color;
+		text-decoration: none;
+		@include transition;
+
+		&:hover {
+			color: $warning-color;
+		}
+
+		&:active {
+			color: $dark-color;
+			opacity: 0.6;
+		}
+	}
+
+	&__top-times {
+		display: flex;
+		column-gap: 17px;
+		@include resetList;
+	}
+
+	&__top-time {
+		@include fontAll(500, 14px, 20px);
+	}
+
+	// Header Bottom Styles
+
+	&__bottom {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: #fff;
+	}
+
+	&__bottom-content {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__bottom-logo {
+		display: block;
+		width: 178px;
+		@include transition;
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+	}
+
+	& .logo {
+		position: absolute;
+		top: -150%;
+		left: 0;
+	}
+
+	&__bottom-list {
+		display: flex;
+		column-gap: 55px;
+		@include resetList;
+		margin-right: 15px;
+	}
+
+	&__bottom-link {
+		position: relative;
+		@include fontAll(500, 16px, 21px);
+		color: $dark-color;
+		text-decoration: none;
+
+		&.active:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: -25px;
+			width: 20px;
+			height: 20px;
+			transform: translateY(-50%);
+			background-image: url('../../Assets/Images/active.png');
+			background-repeat: no-repeat;
+		}
+
+		&.active,
+		&:hover,
+		&:active {
+			border-bottom: 3px solid rgba($color: $warning-color, $alpha: 0.5);
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+	}
+}

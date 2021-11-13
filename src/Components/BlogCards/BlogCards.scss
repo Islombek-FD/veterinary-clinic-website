@@ -1,0 +1,27 @@
+// Blog Cards Section Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.blog-cards {
+	& .cards__list {
+		margin-bottom: 116px;
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 150px;
+	}
+
+	& .main__btn:hover svg {
+		@include transition;
+
+		& path {
+			stroke: $dark-color;
+		}
+
+		& path:nth-child(2) {
+			fill: $dark-color;
+		}
+	}
+}

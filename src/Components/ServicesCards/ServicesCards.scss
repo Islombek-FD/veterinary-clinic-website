@@ -1,0 +1,48 @@
+// Services Cards Section Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.services-cards {
+	padding-bottom: 169px;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 30px;
+		row-gap: 33px;
+		@include resetList;
+	}
+
+	&__item {
+		max-width: 305px;
+		padding: 58px 22px 45px 54px;
+		background-color: #fff;
+		background-image: url('../../Assets/Images/services_cards_pet.png');
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+
+	&__item .main__btn:hover {
+		color: #fff;
+	}
+
+	&__item:nth-child(2n) .main__btn {
+		background-color: $primary-color;
+
+		&:hover {
+			background-color: $dark-color;
+			color: #fff;
+		}
+	}
+
+	&__item-heading {
+		margin-top: 22px;
+		margin-bottom: 14px;
+		@include fontAll(600, 32px, 34px);
+	}
+
+	&__item-description {
+		margin-bottom: 26px;
+		@include fontAll(normal, 16px, 20px);
+	}
+}

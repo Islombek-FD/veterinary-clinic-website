@@ -1,0 +1,91 @@
+// Articles Section Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.articles {
+	padding-top: 151px;
+	padding-bottom: 261px;
+
+	&__heading {
+		text-align: center;
+	}
+
+	&__cards {
+		display: flex;
+		column-gap: 24px;
+		@include resetList;
+	}
+
+	&__card {
+		background-color: #fff;
+		border: 1px solid #f3f3f3;
+		border-radius: 5px;
+
+		&.flex {
+			display: flex;
+			flex-shrink: 0;
+			width: 640px;
+		}
+	}
+
+	&__card-info {
+		padding: 20px 32px 35px;
+	}
+
+	&__card.flex &__card-info {
+		padding-top: 41px;
+	}
+
+	&__card-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+
+	&__card-list {
+		display: flex;
+		column-gap: 7px;
+		@include resetList;
+	}
+
+	&__card-link {
+		@include fontAll(normal, 14px, 22px);
+		color: #3d9cea;
+		text-decoration: none;
+		@include transition;
+
+		&:hover {
+			color: $warning-color;
+		}
+	}
+
+	&__card-date {
+		display: block;
+		margin-bottom: 2px;
+		text-align: right;
+		@include fontAll(500, 14px, 18px);
+		color: $muted-color;
+	}
+
+	&__card.flex &__card-date {
+		margin-bottom: 0;
+	}
+
+	&__card-heading {
+		margin-top: 0;
+		margin-bottom: 10px;
+		@include fontAll(bold, 22px, 25px);
+	}
+
+	&__card.flex &__card-heading {
+		margin-bottom: 15px;
+	}
+
+	&__card-description {
+		margin-top: 0;
+		margin-bottom: 34px;
+		@include fontAll(normal, 16px, 20px);
+		color: $muted-color;
+	}
+}

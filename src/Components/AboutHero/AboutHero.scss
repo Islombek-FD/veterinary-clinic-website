@@ -1,0 +1,32 @@
+// About Hero Styles
+
+@import '../../Assets/Scss/Core.scss';
+
+.about-hero {
+	& .container {
+		background-image: url('../../Assets/Images/about__pet_group.png'),
+			url('../../Assets/Images/about_search-pet.png');
+		background-repeat: no-repeat;
+		background-size: 669px 236px, 112px 112px;
+		background-position: 20px 284px, 444px 380px;
+	}
+
+	&__content {
+		max-width: 1263px;
+		height: 545px;
+		margin-left: auto;
+		padding-top: 109px;
+		background-image: url('../../Assets/Images/about__doctor.png');
+		background-repeat: no-repeat;
+		background-size: 448px 545px;
+		background-position: 702px 0;
+	}
+
+	&__heading {
+		margin-bottom: 22px;
+	}
+
+	&__description {
+		max-width: 411px;
+	}
+}
