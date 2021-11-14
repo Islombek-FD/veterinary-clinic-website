@@ -20,6 +20,11 @@
 		background-image: url('../../Assets/Images/services_cards_pet.png');
 		background-repeat: no-repeat;
 		background-position: right top;
+		@include transition;
+		
+		&:hover {
+			transform: translateY(-20px);
+		}
 	}
 
 	&__item .main__btn:hover {
